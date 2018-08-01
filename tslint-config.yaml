@@ -342,8 +342,6 @@ rules:
     severity: warning
   no-string-literal:
     severity: warning
-  no-submodule-imports:
-    severity: warning
   no-unbound-method:
     severity: warning
   prefer-object-spread:
