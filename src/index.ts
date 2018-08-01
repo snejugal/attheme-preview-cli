@@ -2,6 +2,11 @@ import "colors";
 import args from "./args";
 import * as fs from "fs";
 import Preview = require("attheme-preview");
+import {
+  randomWallpaperHandler,
+  chat_walpapperHandler,
+} from "attheme-preview/handlers";
+import Attheme = require("attheme-js");
 
 if (!args.themePath.endsWith(`.attheme`)) {
   args.themePath += `.attheme`;
@@ -19,6 +24,9 @@ const theme = fs.readFileSync(args.themePath);
 const template = fs.readFileSync(args.templatePath, `utf-8`);
 
 const preview = new Preview();
+
+preview.setVariableHandler(Attheme.IMAGE_KEY, randomWallpaperHandler);
+preview.addCustomHandler(chat_walpapperHandler);
 
 preview.makePrev(theme, template)
   .then((imageContents) => {
