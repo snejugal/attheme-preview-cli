@@ -43,3 +43,11 @@ declare module "attheme-preview/handlers" {
   export const randomWallpaperHandler: VariableHandler;
   export const chat_walpapperHandler: CustomHandler;
 }
+
+declare module "attheme-js" {
+  class Attheme {
+    static readonly IMAGE_KEY: unique symbol;
+  }
+
+  export = Attheme;
+}
