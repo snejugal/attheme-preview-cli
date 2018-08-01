@@ -14,7 +14,7 @@ const parser = new ArgumentParser({
 parser.addArgument(`themePath`);
 parser.addArgument(`outputPath`);
 parser.addArgument([`-t`, `--template`], {
-  defaultValue: path.join(__dirname, `resources/template.svg`),
+  defaultValue: path.join(__dirname, `../resources/template.svg`),
   dest: `templatePath`,
 });
 
