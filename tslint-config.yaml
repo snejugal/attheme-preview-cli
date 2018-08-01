@@ -1,0 +1,366 @@
+extends:
+  - tslint-eslint-rules
+rules:
+  triple-equals:
+    severity: warning
+  no-conditional-assignment:
+    severity: error
+  no-console:
+    severity: warning
+  no-constant-condition:
+    severity: error
+  no-debugger:
+    severity: warning
+  no-duplicate-case:
+    severity: error
+  no-empty:
+    severity: warning
+  no-empty-character-class:
+    severity: warning
+  no-ex-assign:
+    severity: warning
+  no-extra-boolean-cast:
+    severity: warning
+  no-extra-semi:
+    severity: warning
+  no-inner-declarations:
+    severity: warning
+  no-invalid-regexp:
+    severity: error
+  ter-no-irregular-whitespace:
+    severity: error
+  no-regex-spaces:
+    severity: warning
+  ter-no-sparse-arrays:
+    severity: error
+  no-unexpected-multiline:
+    severity: error
+  no-unsafe-finally:
+    severity: error
+  use-isnan:
+    severity: warning
+  valid-jsdoc:
+    severity: warning
+  valid-typeof:
+    severity: error
+  ter-arrow-parens:
+    severity: warning
+  ter-arrow-spacing:
+    severity: warning
+  # generator-star-spacing:
+  #   - warn
+  #   - after
+  # no-class-assign: error
+  no-duplicate-imports:
+    severity: warning
+  # no-new-symbol: error
+  # no-this-before-super: error
+  # no-useless-constructor: warn
+  no-var-keyword:
+    severity: warning
+  object-literal-shorthand:
+    severity: warning
+  ter-prefer-arrow-callback:
+    sevrity: warning
+  prefer-const:
+    severity: warning
+  # prefer-destructuring: warn
+  # prefer-rest-params: warn
+  # prefer-spread: warn
+  # prefer-template: warn
+  # require-yield: error
+  # template-curly-spacing: warn
+  # yield-star-spacing: warn
+  array-bracket-spacing:
+    sevrity: warning
+    options:
+    - never
+  block-spacing:
+    severity: warning
+  brace-style:
+    severity: warning
+  variable-name:
+    severity: warning
+    options:
+      - check-format
+      - ban-keywords
+  trailing-comma:
+    severity: warning
+    options:
+      multiline: always
+      singleline: never
+  # comma-spacing: warn
+  # comma-style: warn
+  ter-computed-property-spacing:
+    sevrity: warning
+  # consistent-this: warn
+  eofline:
+    severity: warning
+  ter-func-call-spacing:
+    severity: warning
+  # func-names:
+  #   - warn
+  #   - as-needed
+  # func-style:
+  #   - warn
+  #   - expression
+  #   - allowArrowFunctions: true
+  ter-indent:
+    severity: warning
+    options:
+      - 2
+      - SwitchCase: 1
+  # key-spacing: warn
+  # keyword-spacing: warn
+  linebreak-style:
+    severity: warning
+    options:
+      - CRLF
+  # lines-around-comment:
+  #   - warn
+  #   - beforeBlockComment: true
+  #     beforeLineComment: true
+  #     allowBlockStart: true
+  #     allowObjectStart: true
+  #     allowArrayStart: true
+  #     allowClassStart: true
+  ter-max-len:
+    severity: warning
+    options:
+      - 80
+  # max-statements-per-line:
+  #   - warn
+  #   - max: 1
+  new-parens:
+      severity: warning
+  # newline-per-chained-call: warn
+  # no-lonely-if: warn
+  ter-no-mixed-spaces-and-tabs:
+      severity: warning
+  no-consecutive-blank-lines:
+    severity: warning
+  # no-negated-condition: warn
+  # no-nested-ternary: warn
+  ter-no-tabs:
+    severity: warning
+  no-trailing-whitespace:
+    severity: warning
+  # no-underscore-dangle: warn
+  # no-unneeded-ternary: warn
+  object-curly-spacing:
+    severity: warning
+    options:
+      - always
+  # object-property-newline: warn
+  one-variable-per-declaration:
+    severity: warning
+  # one-var-declaration-per-line: warn
+  # operator-assignment: warn
+  ter-padded-blocks:
+    severity: warning
+    options:
+      - never
+  object-literal-key-quotes:
+    severity: warning
+    options:
+      - as-needed
+  semicolon:
+    severity: warning
+  # semi-spacing: warn
+  # space-before-blocks: warn
+  # space-before-function-paren: warn
+  space-in-parens:
+    severity: warning
+  # space-infix-ops: warn
+  # space-unary-ops: warn
+  comment-format:
+    severity: warning
+    options:
+      - check-space
+      - check-uppercase
+  # template-tag-spacing: warn
+  # no-mixed-requires: warn
+  # no-new-require: warn
+  # no-path-concat: warn
+  # no-process-exit: warn
+  # no-label-var: error
+  no-shadowed-variable:
+    severity: error
+  # no-shadow-restricted-names: error
+  # no-undef-init: warn
+  no-unused-variable:
+    severity: warning
+  no-use-before-declare:
+    severity: error
+  # accessor-pairs: warn
+  # array-callback-return: error
+  # block-scoped-var: error
+  # class-methods-use-this: error
+  curly:
+    severity: warning
+  # dot-location:
+  #   - warn
+  #   - property
+  # dot-notation: warn
+  ban:
+    severity: warning
+    options:
+      - alert
+      - confirm
+      - prompt
+  no-arg:
+    severity: error
+  # no-case-declarations: error
+  # no-div-regex: error
+  # no-else-return: warn
+  # no-empty-pattern: error
+  # no-eq-null: warn
+  no-eval:
+    severity: error
+  # no-extra-bind: warn
+  # no-extra-label: warn
+  no-switch-case-fall-through:
+    severity: warning
+  # no-floating-decimal: warn
+  # no-implicit-coercion: warn
+  # no-implied-eval: warn
+  # no-iterator: warn
+  # no-lone-blocks: warn
+  no-magic-numbers:
+    severity: warning
+    options:
+        - -1
+        - 0
+        - 1
+  no-multi-spaces:
+    severity: warning
+  # no-new-func: error
+  no-construct:
+    severity: warning
+  # no-octal-escape: warn
+  # no-return-assign: warn
+  ter-no-script-url:
+    severity: error
+  # no-self-assign: warn
+  ter-no-self-compare:
+    severity: warning
+  no-string-throw:
+    severity: warning
+  # no-unmodified-loop-condition: warn
+  no-unused-expression:
+    severity: warning
+  # no-unused-labels: warn
+  # no-useless-concat: warn
+  # no-useless-return: warn
+  # no-void: warn
+  # no-with: error
+  # require-await: warn
+  # vars-on-top: warn
+  # yoda: warn
+
+  adjacent-overload-signatures:
+    severity: warning
+  member-access:
+    severity: warning
+  member-ordering:
+    severity: warning
+    options:
+      order:
+        public-static-field
+        public-static-method
+        protected-static-field
+        protected-static-method
+        private-static-field
+        private-static-method
+        public-instance-field
+        public-instance-method
+        protected-instance-field
+        protected-instance-method
+        private-instance-field
+        private-instance-method
+        public-constructor
+        protected-constructor
+        private-constructor
+  no-empty-interface:
+    severity: warning
+  no-inferrable-types:
+    severity: warning
+  no-internal-module:
+    severity: warning
+  no-namespace:
+    severity: warning
+    options:
+      allow-declarations
+  no-non-null-assertion:
+    severity: warning
+  no-reference:
+    severity: warning
+  no-parameter-reassignment:
+    severity: warning
+  no-unnecessary-type-assertion:
+    severity: warning
+  no-var-requires:
+    severity: warning
+  prefer-for-of:
+    severity: warning
+  typedef-whitespace:
+    severity: warning
+    options:
+      - call-signature: nospace
+        index-signature: nospace
+        parameter: nospace
+        property-declaration: nospace
+        variable-declaration: nospace
+      - call-signature: onespace
+        index-signature: onespace
+        parameter: onespace
+        property-declaration: onespace
+        variable-declaration: onespac
+  unified-signatures:
+    severity: warning
+  await-promise:
+    severity: warning
+  ban-comma-operator:
+    severity: warning
+  label-position:
+    severity: warning
+  no-duplicate-super:
+    severity: error
+  no-duplicate-switch-case:
+    severity: warning
+  no-duplicate-variable:
+    severity: warning
+  no-for-in-array:
+    severity: error
+  no-implicit-dependencies:
+    severity: error
+  no-invalid-template-strings:
+    severity: warning
+  no-misused-new:
+    severity: warning
+  no-return-await:
+    severity: warning
+  no-string-literal:
+    severity: warning
+  no-submodule-imports:
+    severity: warning
+  no-unbound-method:
+    severity: warning
+  prefer-object-spread:
+    severity: warning
+  radix:
+    severity: warning
+  restrict-plus-operands:
+    severity: warning
+  strict-type-predicates:
+    severity: warning
+  max-classes-per-file:
+    severity: warning
+    options:
+      - 1
+  array-type:
+    severity: warning
+    options:
+      array
+  arrow-return-shorthand:
+    severity: warning

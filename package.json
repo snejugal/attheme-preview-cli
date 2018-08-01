@@ -1,0 +1,29 @@
+{
+  "name": "attheme-preview-cli",
+  "version": "1.0.0",
+  "description": "A CLI for making .attheme's previews.",
+  "scripts": {
+    "build": "npx tsc -p ."
+  },
+  "keywords": [
+    "attheme",
+    "telegram",
+    "cli"
+  ],
+  "author": "SneJugal <contact@snejugal.ru> (snejugal.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/argparse": "^1.0.34",
+    "@types/node": "^10.5.5",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^3.0.1"
+  },
+  "bin": {
+    "attheme-preview": "./bin/attheme-preview"
+  },
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "attheme-preview": "^1.0.0"
+  }
+}
