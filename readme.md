@@ -1,4 +1,4 @@
-# `attheme-template-cli`
+# `attheme-preview-cli`
 
 A CLI for making .attheme's previews.
 
